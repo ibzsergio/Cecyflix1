@@ -10,7 +10,7 @@ const [peliculasRecomendadas, setPeliculasRecomendadas] = useState([]);
 // Función para cargar películas desde el backend
 const cargarPeliculas = async () => {
   try {
-    const response = await fetch('https://recomendaciones-backend.onrender.com/api/peliculas');
+    const response = await fetch('https://recomendaciones-backend1.onrender.com/api/peliculas');
     const data = await response.json();
     setPeliculas(data);
     setPeliculasFiltradas(data);
@@ -40,7 +40,7 @@ setRecomendacionIA('Pensando...');
 setPeliculasRecomendadas([]);
 setPeliculasFiltradas([]);
 try {
-const response = await fetch('https://recomendaciones-backend.onrender.com/api/recomendaciones', {
+const response = await fetch('https://recomendaciones-backend1.onrender.com/api/recomendaciones', {
 method: 'POST',
 //No borres el código {
 method: 'POST',
